@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Валерий Гайсин](https://up.htmlacademy.ru/adaptive/21/user/204641).
-* Наставник: `Неизвестно`.
+* Наставник: нету, потому что я нищеброд.
 
 ---
 
