@@ -1,0 +1,68 @@
+.review {
+  outline: 1px dashed green;
+  outline-offset: -2px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 121px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 79px 63px;
+  }
+}
+
+.review__title {
+  margin: 0 0 13px;
+
+  color: $black;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 17px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.review__age-n-position {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0 0 50px;
+
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.review__text {
+  margin: 0 0 34px;
+  padding: 0 20px;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+}

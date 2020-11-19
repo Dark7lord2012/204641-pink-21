@@ -1,0 +1,75 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+
+  list-style: none;
+  box-shadow: 0 -1px 0 $black;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 79px;
+    align-items: center;
+    margin-top: 2px;
+
+    line-height: 18px;
+    text-transform: capitalize;
+    font-weight: normal;
+
+    box-shadow: none;
+  }
+}
+
+.site-list__item {
+  margin: 0 0 1px;
+  padding: 0;
+  box-shadow:
+    0 1px 0 $black,
+    inset 0 1px 0 rgba($white, 0.15);
+
+  @media (min-width: $desktop-width) {
+    box-shadow: none;
+    margin: 0;
+  }
+}
+
+.site-list__link {
+  display: block;
+  max-width: 100%; // параноидальные мысли от переполнения?
+  padding: 16px 0 13px;
+  margin: 0;
+  box-sizing: border-box;
+  border-bottom: 2px solid transparent;
+
+  color: $white;
+  text-decoration: none;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $pink;
+    border-bottom: 2px solid $white; // styleguide?
+  }
+
+  &[href]:active {
+    color: rgba($pink, 0.3);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: max-content;
+    padding: 16px 0 15px;
+
+    &[href]:active {
+      color: rgba($white, 0.3);
+    }
+
+    &--active {
+      border-bottom: 2px solid $pink; // styleguide?
+    }
+  }
+}

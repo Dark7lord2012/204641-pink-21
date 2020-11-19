@@ -1,0 +1,125 @@
+.exploration {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 50%;
+    justify-content: end;
+    grid-auto-rows: min-content;
+    padding-top: 40px;
+    padding-right: var(--wrapper-pad);
+    padding-bottom: 30px; //непонятно по макету
+    min-height: 340px;
+    color: $grey-blue;
+    background-color: $white;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: calc(570px);
+    padding-bottom: 67px;
+    padding-left: 500px;
+  }
+}
+
+.exploration__svg-timer {
+  position: absolute;
+  top: 54px;
+  left: var(--wrapper-pad);
+
+  width: 238px;
+  height: 276px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 35px; //примерно, потом нужно проверить по Pixel Perfect
+  box-sizing: border-box;
+
+  background-image: url("../img/icon-timer.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 238px 276px;
+
+  @media (min-width: $desktop-width) {
+    top: 38px;
+    width: 298px;
+    height: 345px;
+    padding-top: 50px;
+    background-size: 298px 345px;
+  }
+}
+
+.exploration__svg-timer-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 202px;
+  height: 202px;
+  border: 16px solid $pink;
+  border-radius: 50%;
+  box-sizing: border-box;
+
+  font-size: 96px;
+  line-height: 163px;
+  color: $pink;
+  font-weight: bold;
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
+    height: 250px;
+    border-width: 18px;
+    transform: translateY(-3px);
+
+    font-size: 120px;
+    line-height: 163px;
+  }
+}
+
+.exploration__title {
+  margin: 55px 0 10px;
+
+  font-size: 30px;
+  line-height: 36px;
+  color: $black;
+  font-weight: bold;
+
+  @media (min-width: $desktop-width) {
+    margin: 93px 0 26px;
+
+    line-height: 30px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.exploration__text {
+  margin: 0 0 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+    padding-right: 25px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.exploration__link {
+  font-size: 14px;
+  line-height: 24px;
+  color: $pink;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,106 @@
+.info {
+  padding-top: 41px;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 63px;
+  }
+}
+
+.info__slogan {
+  margin: 0;
+
+  color: $grey-blue;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    margin: 0 auto;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.info__slogan + .info__slogan {
+  margin-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.info__advantages-wrapper {
+  padding: 114px 0 0;
+  background-color: $back-pale-grey;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+
+    background-image: none;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 57px;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-position: center top;
+    background-size: contain;
+    background-color: $back-pale-grey;
+  }
+}
+
+.info__advantages {
+  margin: 0;
+  padding: 0 0 318px;
+  list-style: none;
+  background-color: $back-pale-grey;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center calc(100% + 44px);
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: calc(50% + 20px);
+    grid-auto-rows: min-content;
+    row-gap: 3.5px;
+    justify-content: end;
+    padding: 97px 0 43px;
+
+    background-image:
+      url("../img/iphone-screen-3-tablet@1x.png"),
+      url("../img/bg-triangle-white.svg");
+    background-position: 20px bottom, center top;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 300px 300px 300px;
+    // justify-content: space-between;
+    justify-content: center;
+    max-width: $desktop-width;
+    margin: -10px auto 0;
+    gap: 20px;
+    padding: 0 var(--wrapper-pad) 30px;
+
+    background-image: none;
+    background-color: transparent;
+  }
+}
+
+.info__exploration {
+  
+}
