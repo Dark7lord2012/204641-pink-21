@@ -1,0 +1,26 @@
+// Цвета
+$black: #000000;
+$white: #ffffff;
+$grey: #e5e5e5;
+$grey-two: #dedede;
+$grey-three: #efefef;
+$back-pale-grey: #f2f2f2;
+$grey-blue: #283645;
+$back-grey: #1d2631;
+$pink: #d22856;
+$orange: #f25b26;
+$green: #3dc644;
+$green-two: #2aab6d;
+
+// Ширины экрана
+$mobile-width: 320px;
+$tablet-width: 660px;
+$desktop-width: 960px;
+
+:root {
+  --wrapper-pad: 20px;
+
+  @media (min-width: $desktop-width) {
+    --wrapper-pad: 10px;
+  }
+}

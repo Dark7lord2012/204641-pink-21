@@ -1,0 +1,129 @@
+.filter-photo {
+  padding: 0 var(--wrapper-pad) 40px;
+  background-color: $back-pale-grey;
+  color: $grey-blue;
+}
+
+.filter-photo__form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+    outline: 1px solid pink;
+  }
+}
+
+.filter-photo__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: auto;
+    margin-top: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    margin-left: 90px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.filter-photo__text {
+  margin: 0;
+  margin-left: calc(1px - 1px - (var(--wrapper-pad)));
+  margin-right: calc(1px - 1px - (var(--wrapper-pad)));
+  padding: 50px var(--wrapper-pad);
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.filter-photo__image {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin-bottom: 0;
+  }
+}
+
+.filter-photo__filters-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.filter-photo__range-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.filter-photo__range-list-item {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.filter-photo__range-list-item--active {
+  display: block;
+}
+
+.filter-photo__range {
+  width: 100%;
+}
+
+.filter-photo__btn-post,
+.filter-photo__btn-cancel {
+  width: 100%;
+  color: $pink;
+  font-size: 18px;
+  line-height: 18px;
+  border: 3px solid $pink;
+  border-radius: 30px;
+  background-color: transparent;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    align-self: end;
+    flex-grow: 1;
+  }
+}
+
+.filter-photo__btn-cancel {
+  color: $grey-blue;
+  border-color: $grey-blue;
+  opacity: 0.1;
+}

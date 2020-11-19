@@ -1,0 +1,16 @@
+.wrapper {
+  padding: 0 20px;
+  // outline: 2px dashed rgba(blue, 0.7);
+  outline-offset: -2px;
+
+  @media (min-width: $tablet-width) {
+    // outline-color: green;
+  }
+
+  @media (min-width: $desktop-width) {
+    // outline-color: red;
+    padding: 0 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

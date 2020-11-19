@@ -1,0 +1,15 @@
+.page {
+  font-family: "Open Sans", "Arial", sans-serif;
+  background-color: $white;
+}
+
+.page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-width: $mobile-width;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+  }
+}
